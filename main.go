@@ -7,10 +7,13 @@ import (
 )
 
 func main() {
+	fmt.Println("in main")
 	ReadFile()
+	fmt.Println(" going out of main")
 }
 
 func ReadFile() {
+	fmt.Println("in read file ")
 	s, err := callerror()
 	if err != nil {
 		fmt.Println(err)
