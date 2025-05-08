@@ -40,5 +40,5 @@ func ReadFile() {
 }
 
 func callerror() (string, error) {
-	return "", errors.New("hello raj this is error")
+	return "", nil
 }
