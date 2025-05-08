@@ -28,3 +28,12 @@ jobs:
 
       - name: Run
         run: go run main.go
+      
+      - name: Upload
+        uses: actions/upload-artifact@v4
+        with:
+          name: my-artifact
+          path: |
+            test.txt
+          retention-days: 7
+        
